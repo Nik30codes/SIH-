@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;       
+    line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -39,15 +39,15 @@ nav {
     width: 100%;
 }
 
-nav .logo {
+.logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    text-decoration: none;
 }
 
-nav .logo i {
+.logo i {
     margin-right: 0.5rem;
-    
 }
 
 .nav-menu {
@@ -175,6 +175,7 @@ main {
     font-size: 1.1rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .cta-button:hover {
@@ -288,107 +289,62 @@ footer {
     text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .nav-menu {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-    }
+/* ======== UPDATED LOGIN PAGE STYLES ======== */
 
-    nav .nav-links {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav .nav-links li {
-        margin: 0.5rem 0;
-        width: 100%;
-    }
-    
-    .language-dropdown {
-        margin: 1rem 0 0 0;
-        width: 100%;
-    }
-
-    .language-btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .dropdown-content {
-        width: 100%;
-    }
-
-    main {
-        padding-top: 180px; /* Adjust for taller header */
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+.login-page-body {
+    /* Use the same background as the hero section for consistency */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
-#login-modal-overlay {
-    position: fixed;
+
+/* Style for the new header on the login page */
+.login-header {
+    background: transparent;
+    box-shadow: none;
+    position: absolute; /* Changed from fixed */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2000;
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
+    padding: 1.5rem 5%;
+    z-index: 10;
 }
 
-.login-modal {
-    background-color: var(--light-color);
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    width: 90%;
+.login-header .logo {
+    color: var(--light-color); /* Make logo white to stand out on dark bg */
+}
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent */
+    backdrop-filter: blur(10px);
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
     max-width: 450px;
     text-align: center;
-    position: relative;
-    animation: fadeIn 0.3s ease-in-out;
+    margin: auto;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.login-modal h2 {
+.login-box h2 {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
 }
 
-.login-modal p {
+.login-box p {
     margin-bottom: 1.5rem;
-    color: #666;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.8rem;
-    color: #aaa;
-    background: none;
-    border: none;
-    cursor: pointer;
+    color: #555;
 }
 
 .form-group {
@@ -408,8 +364,15 @@ footer {
     width: 100%;
     padding: 12px 12px 12px 40px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px; /* Slightly more rounded corners */
     font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2);
 }
 
 .forgot-password {
@@ -419,23 +382,25 @@ footer {
     margin-bottom: 1.5rem;
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: 700;
 }
 
 .login-btn {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background-color: var(--primary-color);
     color: var(--light-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .login-btn:hover {
     background-color: #21867a;
+    transform: translateY(-2px);
 }
 
 .divider {
@@ -458,8 +423,8 @@ footer {
 
 .social-login button {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     border: 1px solid #ddd;
     background-color: #fff;
     cursor: pointer;
@@ -468,8 +433,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
     margin-bottom: 0.75rem;
+    color: #333;
 }
 
 .social-login button i {
@@ -482,6 +448,7 @@ footer {
 
 .social-login button:hover {
     background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .signup-link {
@@ -494,3 +461,53 @@ footer {
     font-weight: 700;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 5%;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav .nav-links li {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    .language-dropdown {
+        margin: 1rem 0 0 0;
+        width: 100%;
+    }
+    .language-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .dropdown-content {
+        width: 100%;
+    }
+    main {
+        padding-top: 180px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Styles for login page */
+    .login-box {
+        padding: 2rem 1.5rem;
+    }
+    .login-header {
+        padding: 1rem 5%;
+    }
+}
+
