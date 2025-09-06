@@ -138,6 +138,7 @@
             });
 
             // Set default language on page load
-            setLanguage('pa');
+            setLanguage('hi');
+            
         });
     
