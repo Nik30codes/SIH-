@@ -38,7 +38,7 @@
                     nav_how_it_works: "How It Works",
                     nav_contact: "Contact",
                     hero_title: "Smart Farming for a Better Future",
-                    hero_subtitle: "Get real-time, AI-powered advice on crops, soil, weather, and pests, right on your phone. Increase your yield and income with Krishi Mitra.",
+                    hero_subtitle: "Get real-time, AI-powered advice on crops, soil, weather, and pests, right on your phone. Increase your yield and income with Kisan Sarathi.",
                     hero_cta: "Get Started Now",
                     features_title: "Everything You Need in One Place",
                     feature1_title: "Crop Advisory",
@@ -60,7 +60,7 @@
                     step2_desc: "Share soil reports or upload pictures of your crops for analysis.",
                     step3_title: "Get Instant Advice",
                     step3_desc: "Receive immediate, actionable advice to boost your farm's productivity and profitability.",
-                    footer_text: "© 2025 Krishi Mitra. Empowering Indian Farmers."
+                    footer_text: "© 2025 Kisan Sarathi. Empowering Indian Farmers."
                 },
                 
                 pa: {
