@@ -2,35 +2,6 @@
 
             // --- TRANSLATION DATA ---
             const translations = {
-                en: {
-                    nav_features: "Features",
-                    nav_how_it_works: "How It Works",
-                    nav_contact: "Contact",
-                    hero_title: "Smart Farming for a Better Future",
-                    hero_subtitle: "Get real-time, AI-powered advice on crops, soil, weather, and pests, right on your phone. Increase your yield and income with Krishi Mitra.",
-                    hero_cta: "Get Started Now",
-                    features_title: "Everything You Need in One Place",
-                    feature1_title: "Crop Advisory",
-                    feature1_desc: "Personalized crop recommendations based on your soil type, weather, and farm location.",
-                    feature2_title: "Soil Health Guide",
-                    feature2_desc: "Get instant recommendations on fertilizers and nutrients to improve your soil's health.",
-                    feature3_title: "Weather Alerts",
-                    feature3_desc: "Receive timely weather forecasts and alerts to protect your crops from extreme conditions.",
-                    feature4_title: "Pest & Disease Detection",
-                    feature4_desc: "Just upload a photo of your crop, and our AI will identify pests or diseases and suggest remedies.",
-                    feature5_title: "Market Prices",
-                    feature5_desc: "Track live market prices for your crops to sell at the right time for the best profit.",
-                    feature6_title: "Expert Support",
-                    feature6_desc: "Connect with agricultural experts for guidance and solve your farming queries.",
-                    how_it_works_title: "Simple Steps to Success",
-                    step1_title: "Register Your Farm",
-                    step1_desc: "Create an account using your mobile number and add basic details about your farm.",
-                    step2_title: "Upload Information",
-                    step2_desc: "Share soil reports or upload pictures of your crops for analysis.",
-                    step3_title: "Get Instant Advice",
-                    step3_desc: "Receive immediate, actionable advice to boost your farm's productivity and profitability.",
-                    footer_text: "© 2025 Krishi Mitra. Empowering Indian Farmers."
-                },
                 hi: {
                     nav_features: "विशेषताएँ",
                     nav_how_it_works: "यह कैसे काम करता है",
@@ -60,6 +31,38 @@
                     step3_desc: "अपने खेत की उत्पादकता और लाभप्रदता को बढ़ावा देने के लिए तत्काल, कार्रवाई योग्य सलाह प्राप्त करें।",
                     footer_text: "© 2025 कृषि मित्र। भारतीय किसानों को सशक्त बनाना।"
                 },
+
+
+                en: {
+                    nav_features: "Features",
+                    nav_how_it_works: "How It Works",
+                    nav_contact: "Contact",
+                    hero_title: "Smart Farming for a Better Future",
+                    hero_subtitle: "Get real-time, AI-powered advice on crops, soil, weather, and pests, right on your phone. Increase your yield and income with Krishi Mitra.",
+                    hero_cta: "Get Started Now",
+                    features_title: "Everything You Need in One Place",
+                    feature1_title: "Crop Advisory",
+                    feature1_desc: "Personalized crop recommendations based on your soil type, weather, and farm location.",
+                    feature2_title: "Soil Health Guide",
+                    feature2_desc: "Get instant recommendations on fertilizers and nutrients to improve your soil's health.",
+                    feature3_title: "Weather Alerts",
+                    feature3_desc: "Receive timely weather forecasts and alerts to protect your crops from extreme conditions.",
+                    feature4_title: "Pest & Disease Detection",
+                    feature4_desc: "Just upload a photo of your crop, and our AI will identify pests or diseases and suggest remedies.",
+                    feature5_title: "Market Prices",
+                    feature5_desc: "Track live market prices for your crops to sell at the right time for the best profit.",
+                    feature6_title: "Expert Support",
+                    feature6_desc: "Connect with agricultural experts for guidance and solve your farming queries.",
+                    how_it_works_title: "Simple Steps to Success",
+                    step1_title: "Register Your Farm",
+                    step1_desc: "Create an account using your mobile number and add basic details about your farm.",
+                    step2_title: "Upload Information",
+                    step2_desc: "Share soil reports or upload pictures of your crops for analysis.",
+                    step3_title: "Get Instant Advice",
+                    step3_desc: "Receive immediate, actionable advice to boost your farm's productivity and profitability.",
+                    footer_text: "© 2025 Krishi Mitra. Empowering Indian Farmers."
+                },
+                
                 pa: {
                     nav_features: "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
                     nav_how_it_works: "ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ",
